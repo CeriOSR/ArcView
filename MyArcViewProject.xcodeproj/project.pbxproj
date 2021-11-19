@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E08D09A1274807FB005BBCF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08D09A0274807FB005BBCF9 /* AppDelegate.swift */; };
+		E08D09A3274807FB005BBCF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08D09A2274807FB005BBCF9 /* SceneDelegate.swift */; };
+		E08D09A5274807FB005BBCF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08D09A4274807FB005BBCF9 /* ViewController.swift */; };
+		E08D09A8274807FB005BBCF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E08D09A6274807FB005BBCF9 /* Main.storyboard */; };
+		E08D09AA274807FD005BBCF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E08D09A9274807FD005BBCF9 /* Assets.xcassets */; };
+		E08D09AD274807FD005BBCF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E08D09AB274807FD005BBCF9 /* LaunchScreen.storyboard */; };
+		E08D09B8274807FD005BBCF9 /* MyArcViewProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08D09B7274807FD005BBCF9 /* MyArcViewProjectTests.swift */; };
+		E08D09C3274807FD005BBCF9 /* MyArcViewProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08D09C2274807FD005BBCF9 /* MyArcViewProjectUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E08D09B4274807FD005BBCF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E08D0995274807FB005BBCF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E08D099C274807FB005BBCF9;
+			remoteInfo = MyArcViewProject;
+		};
+		E08D09BF274807FD005BBCF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E08D0995274807FB005BBCF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E08D099C274807FB005BBCF9;
+			remoteInfo = MyArcViewProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E08D099D274807FB005BBCF9 /* MyArcViewProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyArcViewProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E08D09A0274807FB005BBCF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E08D09A2274807FB005BBCF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E08D09A4274807FB005BBCF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E08D09A7274807FB005BBCF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E08D09A9274807FD005BBCF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E08D09AC274807FD005BBCF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E08D09AE274807FD005BBCF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E08D09B3274807FD005BBCF9 /* MyArcViewProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyArcViewProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E08D09B7274807FD005BBCF9 /* MyArcViewProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyArcViewProjectTests.swift; sourceTree = "<group>"; };
+		E08D09B9274807FD005BBCF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E08D09BE274807FD005BBCF9 /* MyArcViewProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyArcViewProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E08D09C2274807FD005BBCF9 /* MyArcViewProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyArcViewProjectUITests.swift; sourceTree = "<group>"; };
+		E08D09C4274807FD005BBCF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E08D099A274807FB005BBCF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E08D09B0274807FD005BBCF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E08D09BB274807FD005BBCF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E08D0994274807FB005BBCF9 = {
+			isa = PBXGroup;
+			children = (
+				E08D099F274807FB005BBCF9 /* MyArcViewProject */,
+				E08D09B6274807FD005BBCF9 /* MyArcViewProjectTests */,
+				E08D09C1274807FD005BBCF9 /* MyArcViewProjectUITests */,
+				E08D099E274807FB005BBCF9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E08D099E274807FB005BBCF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E08D099D274807FB005BBCF9 /* MyArcViewProject.app */,
+				E08D09B3274807FD005BBCF9 /* MyArcViewProjectTests.xctest */,
+				E08D09BE274807FD005BBCF9 /* MyArcViewProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E08D099F274807FB005BBCF9 /* MyArcViewProject */ = {
+			isa = PBXGroup;
+			children = (
+				E08D09A0274807FB005BBCF9 /* AppDelegate.swift */,
+				E08D09A2274807FB005BBCF9 /* SceneDelegate.swift */,
+				E08D09A4274807FB005BBCF9 /* ViewController.swift */,
+				E08D09A6274807FB005BBCF9 /* Main.storyboard */,
+				E08D09A9274807FD005BBCF9 /* Assets.xcassets */,
+				E08D09AB274807FD005BBCF9 /* LaunchScreen.storyboard */,
+				E08D09AE274807FD005BBCF9 /* Info.plist */,
+			);
+			path = MyArcViewProject;
+			sourceTree = "<group>";
+		};
+		E08D09B6274807FD005BBCF9 /* MyArcViewProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				E08D09B7274807FD005BBCF9 /* MyArcViewProjectTests.swift */,
+				E08D09B9274807FD005BBCF9 /* Info.plist */,
+			);
+			path = MyArcViewProjectTests;
+			sourceTree = "<group>";
+		};
+		E08D09C1274807FD005BBCF9 /* MyArcViewProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E08D09C2274807FD005BBCF9 /* MyArcViewProjectUITests.swift */,
+				E08D09C4274807FD005BBCF9 /* Info.plist */,
+			);
+			path = MyArcViewProjectUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E08D099C274807FB005BBCF9 /* MyArcViewProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E08D09C7274807FD005BBCF9 /* Build configuration list for PBXNativeTarget "MyArcViewProject" */;
+			buildPhases = (
+				E08D0999274807FB005BBCF9 /* Sources */,
+				E08D099A274807FB005BBCF9 /* Frameworks */,
+				E08D099B274807FB005BBCF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyArcViewProject;
+			productName = MyArcViewProject;
+			productReference = E08D099D274807FB005BBCF9 /* MyArcViewProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E08D09B2274807FD005BBCF9 /* MyArcViewProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E08D09CA274807FD005BBCF9 /* Build configuration list for PBXNativeTarget "MyArcViewProjectTests" */;
+			buildPhases = (
+				E08D09AF274807FD005BBCF9 /* Sources */,
+				E08D09B0274807FD005BBCF9 /* Frameworks */,
+				E08D09B1274807FD005BBCF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E08D09B5274807FD005BBCF9 /* PBXTargetDependency */,
+			);
+			name = MyArcViewProjectTests;
+			productName = MyArcViewProjectTests;
+			productReference = E08D09B3274807FD005BBCF9 /* MyArcViewProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E08D09BD274807FD005BBCF9 /* MyArcViewProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E08D09CD274807FD005BBCF9 /* Build configuration list for PBXNativeTarget "MyArcViewProjectUITests" */;
+			buildPhases = (
+				E08D09BA274807FD005BBCF9 /* Sources */,
+				E08D09BB274807FD005BBCF9 /* Frameworks */,
+				E08D09BC274807FD005BBCF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E08D09C0274807FD005BBCF9 /* PBXTargetDependency */,
+			);
+			name = MyArcViewProjectUITests;
+			productName = MyArcViewProjectUITests;
+			productReference = E08D09BE274807FD005BBCF9 /* MyArcViewProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E08D0995274807FB005BBCF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					E08D099C274807FB005BBCF9 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					E08D09B2274807FD005BBCF9 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = E08D099C274807FB005BBCF9;
+					};
+					E08D09BD274807FD005BBCF9 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = E08D099C274807FB005BBCF9;
+					};
+				};
+			};
+			buildConfigurationList = E08D0998274807FB005BBCF9 /* Build configuration list for PBXProject "MyArcViewProject" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E08D0994274807FB005BBCF9;
+			productRefGroup = E08D099E274807FB005BBCF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E08D099C274807FB005BBCF9 /* MyArcViewProject */,
+				E08D09B2274807FD005BBCF9 /* MyArcViewProjectTests */,
+				E08D09BD274807FD005BBCF9 /* MyArcViewProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E08D099B274807FB005BBCF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E08D09AD274807FD005BBCF9 /* LaunchScreen.storyboard in Resources */,
+				E08D09AA274807FD005BBCF9 /* Assets.xcassets in Resources */,
+				E08D09A8274807FB005BBCF9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E08D09B1274807FD005BBCF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E08D09BC274807FD005BBCF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E08D0999274807FB005BBCF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E08D09A5274807FB005BBCF9 /* ViewController.swift in Sources */,
+				E08D09A1274807FB005BBCF9 /* AppDelegate.swift in Sources */,
+				E08D09A3274807FB005BBCF9 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E08D09AF274807FD005BBCF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E08D09B8274807FD005BBCF9 /* MyArcViewProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E08D09BA274807FD005BBCF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E08D09C3274807FD005BBCF9 /* MyArcViewProjectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E08D09B5274807FD005BBCF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E08D099C274807FB005BBCF9 /* MyArcViewProject */;
+			targetProxy = E08D09B4274807FD005BBCF9 /* PBXContainerItemProxy */;
+		};
+		E08D09C0274807FD005BBCF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E08D099C274807FB005BBCF9 /* MyArcViewProject */;
+			targetProxy = E08D09BF274807FD005BBCF9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E08D09A6274807FB005BBCF9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E08D09A7274807FB005BBCF9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E08D09AB274807FD005BBCF9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E08D09AC274807FD005BBCF9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E08D09C5274807FD005BBCF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E08D09C6274807FD005BBCF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E08D09C8274807FD005BBCF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7F88VK32VK;
+				INFOPLIST_FILE = MyArcViewProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ceriosrey.MyArcViewProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E08D09C9274807FD005BBCF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7F88VK32VK;
+				INFOPLIST_FILE = MyArcViewProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ceriosrey.MyArcViewProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E08D09CB274807FD005BBCF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7F88VK32VK;
+				INFOPLIST_FILE = MyArcViewProjectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ceriosrey.MyArcViewProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyArcViewProject.app/MyArcViewProject";
+			};
+			name = Debug;
+		};
+		E08D09CC274807FD005BBCF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7F88VK32VK;
+				INFOPLIST_FILE = MyArcViewProjectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ceriosrey.MyArcViewProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyArcViewProject.app/MyArcViewProject";
+			};
+			name = Release;
+		};
+		E08D09CE274807FD005BBCF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7F88VK32VK;
+				INFOPLIST_FILE = MyArcViewProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ceriosrey.MyArcViewProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyArcViewProject;
+			};
+			name = Debug;
+		};
+		E08D09CF274807FD005BBCF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7F88VK32VK;
+				INFOPLIST_FILE = MyArcViewProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ceriosrey.MyArcViewProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyArcViewProject;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E08D0998274807FB005BBCF9 /* Build configuration list for PBXProject "MyArcViewProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E08D09C5274807FD005BBCF9 /* Debug */,
+				E08D09C6274807FD005BBCF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E08D09C7274807FD005BBCF9 /* Build configuration list for PBXNativeTarget "MyArcViewProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E08D09C8274807FD005BBCF9 /* Debug */,
+				E08D09C9274807FD005BBCF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E08D09CA274807FD005BBCF9 /* Build configuration list for PBXNativeTarget "MyArcViewProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E08D09CB274807FD005BBCF9 /* Debug */,
+				E08D09CC274807FD005BBCF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E08D09CD274807FD005BBCF9 /* Build configuration list for PBXNativeTarget "MyArcViewProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E08D09CE274807FD005BBCF9 /* Debug */,
+				E08D09CF274807FD005BBCF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E08D0995274807FB005BBCF9 /* Project object */;
+}
