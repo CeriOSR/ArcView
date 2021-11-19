@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E0115B342748571C009BE00E /* ViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0115B332748571C009BE00E /* ViewModelTest.swift */; };
+		E0115B36274858B8009BE00E /* ArcCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0115B35274858B8009BE00E /* ArcCell.swift */; };
 		E08D09A1274807FB005BBCF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08D09A0274807FB005BBCF9 /* AppDelegate.swift */; };
 		E08D09A3274807FB005BBCF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08D09A2274807FB005BBCF9 /* SceneDelegate.swift */; };
 		E08D09A5274807FB005BBCF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08D09A4274807FB005BBCF9 /* ViewController.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E0115B332748571C009BE00E /* ViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTest.swift; sourceTree = "<group>"; };
+		E0115B35274858B8009BE00E /* ArcCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcCell.swift; sourceTree = "<group>"; };
 		E08D099D274807FB005BBCF9 /* MyArcViewProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyArcViewProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E08D09A0274807FB005BBCF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E08D09A2274807FB005BBCF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 				E08D09A9274807FD005BBCF9 /* Assets.xcassets */,
 				E08D09AB274807FD005BBCF9 /* LaunchScreen.storyboard */,
 				E08D09AE274807FD005BBCF9 /* Info.plist */,
+				E0115B35274858B8009BE00E /* ArcCell.swift */,
 			);
 			path = MyArcViewProject;
 			sourceTree = "<group>";
@@ -115,6 +120,7 @@
 			children = (
 				E08D09B7274807FD005BBCF9 /* MyArcViewProjectTests.swift */,
 				E08D09B9274807FD005BBCF9 /* Info.plist */,
+				E0115B332748571C009BE00E /* ViewModelTest.swift */,
 			);
 			path = MyArcViewProjectTests;
 			sourceTree = "<group>";
@@ -260,6 +266,7 @@
 			files = (
 				E08D09A5274807FB005BBCF9 /* ViewController.swift in Sources */,
 				E08D09A1274807FB005BBCF9 /* AppDelegate.swift in Sources */,
+				E0115B36274858B8009BE00E /* ArcCell.swift in Sources */,
 				E08D09A3274807FB005BBCF9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0115B342748571C009BE00E /* ViewModelTest.swift in Sources */,
 				E08D09B8274807FD005BBCF9 /* MyArcViewProjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
