@@ -13,8 +13,18 @@ class ArcCell: UICollectionViewCell {
     @IBOutlet private weak var borderView: UIView!
     @IBOutlet private weak var colorView: UIView!
     
-    override class func awakeFromNib() {
-        super.awakeFromNib()
-        
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        setupViews()
+    }
+}
+
+// MARK: - Setup
+extension ArcCell {
+    func setupViews() {
+        borderView.layer.cornerRadius = borderView.bounds.width / 2
+        borderView.layer.masksToBounds = true
+        colorView.layer.cornerRadius = borderView.bounds.width / 2
+        colorView.layer.masksToBounds = true
     }
 }
