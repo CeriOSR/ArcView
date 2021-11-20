@@ -25,7 +25,8 @@ extension ViewController {
     }
     
     func setupCollectionView () {
-        
+        let layout = ArcCollectionViewLayout()
+        collectionView.collectionViewLayout = layout
         collectionView.backgroundColor = .yellow
         collectionView.delegate = self
         collectionView.dataSource = self

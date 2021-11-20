@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		E0115B342748571C009BE00E /* ViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0115B332748571C009BE00E /* ViewModelTest.swift */; };
 		E0115B36274858B8009BE00E /* ArcCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0115B35274858B8009BE00E /* ArcCell.swift */; };
+		E0115B3C2748603D009BE00E /* ArcCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0115B3B2748603D009BE00E /* ArcCollectionViewLayout.swift */; };
+		E0115B3F274882FF009BE00E /* UICollectionViewLayoutAttributes+copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0115B3E274882FF009BE00E /* UICollectionViewLayoutAttributes+copy.swift */; };
+		E0115B4127488401009BE00E /* Array+shift.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0115B4027488401009BE00E /* Array+shift.swift */; };
 		E08D09A1274807FB005BBCF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08D09A0274807FB005BBCF9 /* AppDelegate.swift */; };
 		E08D09A3274807FB005BBCF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08D09A2274807FB005BBCF9 /* SceneDelegate.swift */; };
 		E08D09A5274807FB005BBCF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08D09A4274807FB005BBCF9 /* ViewController.swift */; };
@@ -39,6 +42,9 @@
 /* Begin PBXFileReference section */
 		E0115B332748571C009BE00E /* ViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTest.swift; sourceTree = "<group>"; };
 		E0115B35274858B8009BE00E /* ArcCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcCell.swift; sourceTree = "<group>"; };
+		E0115B3B2748603D009BE00E /* ArcCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcCollectionViewLayout.swift; sourceTree = "<group>"; };
+		E0115B3E274882FF009BE00E /* UICollectionViewLayoutAttributes+copy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewLayoutAttributes+copy.swift"; sourceTree = "<group>"; };
+		E0115B4027488401009BE00E /* Array+shift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+shift.swift"; sourceTree = "<group>"; };
 		E08D099D274807FB005BBCF9 /* MyArcViewProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyArcViewProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E08D09A0274807FB005BBCF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E08D09A2274807FB005BBCF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +86,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E0115B3727485F92009BE00E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E0115B3A27485FFB009BE00E /* CollectionViewLayout */,
+				E0115B3927485FB5009BE00E /* ArcCell */,
+				E0115B3827485FA3009BE00E /* ViewController */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E0115B3827485FA3009BE00E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E08D09A4274807FB005BBCF9 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E0115B3927485FB5009BE00E /* ArcCell */ = {
+			isa = PBXGroup;
+			children = (
+				E0115B35274858B8009BE00E /* ArcCell.swift */,
+			);
+			path = ArcCell;
+			sourceTree = "<group>";
+		};
+		E0115B3A27485FFB009BE00E /* CollectionViewLayout */ = {
+			isa = PBXGroup;
+			children = (
+				E0115B3B2748603D009BE00E /* ArcCollectionViewLayout.swift */,
+			);
+			path = CollectionViewLayout;
+			sourceTree = "<group>";
+		};
+		E0115B3D2748829D009BE00E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E0115B3E274882FF009BE00E /* UICollectionViewLayoutAttributes+copy.swift */,
+				E0115B4027488401009BE00E /* Array+shift.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		E08D0994274807FB005BBCF9 = {
 			isa = PBXGroup;
 			children = (
@@ -103,14 +152,14 @@
 		E08D099F274807FB005BBCF9 /* MyArcViewProject */ = {
 			isa = PBXGroup;
 			children = (
+				E0115B3D2748829D009BE00E /* Extensions */,
+				E0115B3727485F92009BE00E /* UI */,
 				E08D09A0274807FB005BBCF9 /* AppDelegate.swift */,
 				E08D09A2274807FB005BBCF9 /* SceneDelegate.swift */,
-				E08D09A4274807FB005BBCF9 /* ViewController.swift */,
 				E08D09A6274807FB005BBCF9 /* Main.storyboard */,
 				E08D09A9274807FD005BBCF9 /* Assets.xcassets */,
 				E08D09AB274807FD005BBCF9 /* LaunchScreen.storyboard */,
 				E08D09AE274807FD005BBCF9 /* Info.plist */,
-				E0115B35274858B8009BE00E /* ArcCell.swift */,
 			);
 			path = MyArcViewProject;
 			sourceTree = "<group>";
@@ -266,7 +315,10 @@
 			files = (
 				E08D09A5274807FB005BBCF9 /* ViewController.swift in Sources */,
 				E08D09A1274807FB005BBCF9 /* AppDelegate.swift in Sources */,
+				E0115B3F274882FF009BE00E /* UICollectionViewLayoutAttributes+copy.swift in Sources */,
 				E0115B36274858B8009BE00E /* ArcCell.swift in Sources */,
+				E0115B3C2748603D009BE00E /* ArcCollectionViewLayout.swift in Sources */,
+				E0115B4127488401009BE00E /* Array+shift.swift in Sources */,
 				E08D09A3274807FB005BBCF9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
