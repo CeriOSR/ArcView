@@ -17,8 +17,8 @@ class ArcCollectionViewLayout: UICollectionViewLayout {
     private var itemCount: Int = 0
     private var itemXSpacing: CGFloat = 10.0
     private var itemSize: CGSize = CGSize(width: 80, height: 80)
-    // Radius of the circle that the cells will arc over
-    private var arcRadius: CGFloat = 400
+    // Radius of the circle that the cells will arc over - Lower for steeper arc.
+    private var arcRadius: CGFloat = 500
     
     // Make this large enough so a fast swipe will stop before bouncing. Needed for Looping.
     private let insetWidth: CGFloat = 16000
@@ -209,7 +209,7 @@ extension ArcCollectionViewLayout {
         
         if distanceFromCenter < activeArcDistance {
             // divide the latter part by higher number to make the curve smaller. 5 is straight
-            let yTranslation = arcRadius - sqrt((arcRadius * arcRadius) - (distanceFromCenter * distanceFromCenter) / 4)
+            let yTranslation = arcRadius - sqrt((arcRadius * arcRadius) - (distanceFromCenter * distanceFromCenter))
             transform = CATransform3DMakeTranslation(0, yTranslation, 0)
         }
         attribute.transform3D = transform
