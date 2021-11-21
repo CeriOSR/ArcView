@@ -18,7 +18,7 @@ class ArcCollectionViewLayout: UICollectionViewLayout {
     private var itemXSpacing: CGFloat = 10.0
     private var itemSize: CGSize = CGSize(width: 80, height: 80)
     // Radius of the circle that the cells will arc over - Lower for steeper arc.
-    private var arcRadius: CGFloat = 500
+    private var arcRadius: CGFloat = 600
     
     // Make this large enough so a fast swipe will stop before bouncing. Needed for Looping.
     private let insetWidth: CGFloat = 16000

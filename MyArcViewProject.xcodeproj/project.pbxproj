@@ -12,9 +12,13 @@
 		E0115B3C2748603D009BE00E /* ArcCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0115B3B2748603D009BE00E /* ArcCollectionViewLayout.swift */; };
 		E0115B3F274882FF009BE00E /* UICollectionViewLayoutAttributes+copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0115B3E274882FF009BE00E /* UICollectionViewLayoutAttributes+copy.swift */; };
 		E0115B4127488401009BE00E /* Array+shift.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0115B4027488401009BE00E /* Array+shift.swift */; };
+		E0115B4327489EAC009BE00E /* ArcCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0115B4227489EAC009BE00E /* ArcCellViewModel.swift */; };
+		E0115B4527489EBB009BE00E /* ArcCellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0115B4427489EBB009BE00E /* ArcCellViewModelProtocol.swift */; };
+		E0115B472748A73A009BE00E /* ArcControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0115B462748A73A009BE00E /* ArcControllerViewModel.swift */; };
+		E0115B492748A757009BE00E /* ArcControllerViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0115B482748A757009BE00E /* ArcControllerViewModelProtocol.swift */; };
 		E08D09A1274807FB005BBCF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08D09A0274807FB005BBCF9 /* AppDelegate.swift */; };
 		E08D09A3274807FB005BBCF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08D09A2274807FB005BBCF9 /* SceneDelegate.swift */; };
-		E08D09A5274807FB005BBCF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08D09A4274807FB005BBCF9 /* ViewController.swift */; };
+		E08D09A5274807FB005BBCF9 /* ArcController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08D09A4274807FB005BBCF9 /* ArcController.swift */; };
 		E08D09A8274807FB005BBCF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E08D09A6274807FB005BBCF9 /* Main.storyboard */; };
 		E08D09AA274807FD005BBCF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E08D09A9274807FD005BBCF9 /* Assets.xcassets */; };
 		E08D09AD274807FD005BBCF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E08D09AB274807FD005BBCF9 /* LaunchScreen.storyboard */; };
@@ -45,10 +49,14 @@
 		E0115B3B2748603D009BE00E /* ArcCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcCollectionViewLayout.swift; sourceTree = "<group>"; };
 		E0115B3E274882FF009BE00E /* UICollectionViewLayoutAttributes+copy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewLayoutAttributes+copy.swift"; sourceTree = "<group>"; };
 		E0115B4027488401009BE00E /* Array+shift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+shift.swift"; sourceTree = "<group>"; };
+		E0115B4227489EAC009BE00E /* ArcCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcCellViewModel.swift; sourceTree = "<group>"; };
+		E0115B4427489EBB009BE00E /* ArcCellViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcCellViewModelProtocol.swift; sourceTree = "<group>"; };
+		E0115B462748A73A009BE00E /* ArcControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcControllerViewModel.swift; sourceTree = "<group>"; };
+		E0115B482748A757009BE00E /* ArcControllerViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcControllerViewModelProtocol.swift; sourceTree = "<group>"; };
 		E08D099D274807FB005BBCF9 /* MyArcViewProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyArcViewProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E08D09A0274807FB005BBCF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E08D09A2274807FB005BBCF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E08D09A4274807FB005BBCF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E08D09A4274807FB005BBCF9 /* ArcController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcController.swift; sourceTree = "<group>"; };
 		E08D09A7274807FB005BBCF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E08D09A9274807FD005BBCF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E08D09AC274807FD005BBCF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,7 +107,9 @@
 		E0115B3827485FA3009BE00E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				E08D09A4274807FB005BBCF9 /* ViewController.swift */,
+				E08D09A4274807FB005BBCF9 /* ArcController.swift */,
+				E0115B462748A73A009BE00E /* ArcControllerViewModel.swift */,
+				E0115B482748A757009BE00E /* ArcControllerViewModelProtocol.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -108,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				E0115B35274858B8009BE00E /* ArcCell.swift */,
+				E0115B4227489EAC009BE00E /* ArcCellViewModel.swift */,
+				E0115B4427489EBB009BE00E /* ArcCellViewModelProtocol.swift */,
 			);
 			path = ArcCell;
 			sourceTree = "<group>";
@@ -313,10 +325,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E08D09A5274807FB005BBCF9 /* ViewController.swift in Sources */,
+				E08D09A5274807FB005BBCF9 /* ArcController.swift in Sources */,
+				E0115B472748A73A009BE00E /* ArcControllerViewModel.swift in Sources */,
 				E08D09A1274807FB005BBCF9 /* AppDelegate.swift in Sources */,
+				E0115B492748A757009BE00E /* ArcControllerViewModelProtocol.swift in Sources */,
 				E0115B3F274882FF009BE00E /* UICollectionViewLayoutAttributes+copy.swift in Sources */,
+				E0115B4327489EAC009BE00E /* ArcCellViewModel.swift in Sources */,
 				E0115B36274858B8009BE00E /* ArcCell.swift in Sources */,
+				E0115B4527489EBB009BE00E /* ArcCellViewModelProtocol.swift in Sources */,
 				E0115B3C2748603D009BE00E /* ArcCollectionViewLayout.swift in Sources */,
 				E0115B4127488401009BE00E /* Array+shift.swift in Sources */,
 				E08D09A3274807FB005BBCF9 /* SceneDelegate.swift in Sources */,
