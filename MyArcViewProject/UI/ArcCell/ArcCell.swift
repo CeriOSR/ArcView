@@ -31,7 +31,7 @@ extension ArcCell {
         colorView.backgroundColor = viewModel.color
         borderView.layer.cornerRadius = borderView.bounds.width / 2
         borderView.layer.masksToBounds = true
-        colorView.layer.cornerRadius = borderView.bounds.width / 2
+        colorView.layer.cornerRadius = colorView.bounds.width / 2
         colorView.layer.masksToBounds = true
     }
 }

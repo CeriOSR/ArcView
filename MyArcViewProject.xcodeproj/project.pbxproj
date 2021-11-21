@@ -16,6 +16,9 @@
 		E0115B4527489EBB009BE00E /* ArcCellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0115B4427489EBB009BE00E /* ArcCellViewModelProtocol.swift */; };
 		E0115B472748A73A009BE00E /* ArcControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0115B462748A73A009BE00E /* ArcControllerViewModel.swift */; };
 		E0115B492748A757009BE00E /* ArcControllerViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0115B482748A757009BE00E /* ArcControllerViewModelProtocol.swift */; };
+		E0115B4B2749E2DA009BE00E /* ArcLayoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0115B4A2749E2DA009BE00E /* ArcLayoutViewModel.swift */; };
+		E0115B4D2749E39D009BE00E /* ArcLayoutViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0115B4C2749E39D009BE00E /* ArcLayoutViewModelProtocol.swift */; };
+		E0115B53274AB4F5009BE00E /* ArcControllerUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0115B52274AB4F5009BE00E /* ArcControllerUITest.swift */; };
 		E08D09A1274807FB005BBCF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08D09A0274807FB005BBCF9 /* AppDelegate.swift */; };
 		E08D09A3274807FB005BBCF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08D09A2274807FB005BBCF9 /* SceneDelegate.swift */; };
 		E08D09A5274807FB005BBCF9 /* ArcController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08D09A4274807FB005BBCF9 /* ArcController.swift */; };
@@ -53,6 +56,9 @@
 		E0115B4427489EBB009BE00E /* ArcCellViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcCellViewModelProtocol.swift; sourceTree = "<group>"; };
 		E0115B462748A73A009BE00E /* ArcControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcControllerViewModel.swift; sourceTree = "<group>"; };
 		E0115B482748A757009BE00E /* ArcControllerViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcControllerViewModelProtocol.swift; sourceTree = "<group>"; };
+		E0115B4A2749E2DA009BE00E /* ArcLayoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcLayoutViewModel.swift; sourceTree = "<group>"; };
+		E0115B4C2749E39D009BE00E /* ArcLayoutViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcLayoutViewModelProtocol.swift; sourceTree = "<group>"; };
+		E0115B52274AB4F5009BE00E /* ArcControllerUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcControllerUITest.swift; sourceTree = "<group>"; };
 		E08D099D274807FB005BBCF9 /* MyArcViewProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyArcViewProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E08D09A0274807FB005BBCF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E08D09A2274807FB005BBCF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,19 +106,19 @@
 				E08D09A6274807FB005BBCF9 /* Main.storyboard */,
 				E0115B3A27485FFB009BE00E /* CollectionViewLayout */,
 				E0115B3927485FB5009BE00E /* ArcCell */,
-				E0115B3827485FA3009BE00E /* ViewController */,
+				E0115B3827485FA3009BE00E /* ArcController */,
 			);
 			path = UI;
 			sourceTree = "<group>";
 		};
-		E0115B3827485FA3009BE00E /* ViewController */ = {
+		E0115B3827485FA3009BE00E /* ArcController */ = {
 			isa = PBXGroup;
 			children = (
 				E08D09A4274807FB005BBCF9 /* ArcController.swift */,
 				E0115B462748A73A009BE00E /* ArcControllerViewModel.swift */,
 				E0115B482748A757009BE00E /* ArcControllerViewModelProtocol.swift */,
 			);
-			path = ViewController;
+			path = ArcController;
 			sourceTree = "<group>";
 		};
 		E0115B3927485FB5009BE00E /* ArcCell */ = {
@@ -129,6 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				E0115B3B2748603D009BE00E /* ArcCollectionViewLayout.swift */,
+				E0115B4A2749E2DA009BE00E /* ArcLayoutViewModel.swift */,
+				E0115B4C2749E39D009BE00E /* ArcLayoutViewModelProtocol.swift */,
 			);
 			path = CollectionViewLayout;
 			sourceTree = "<group>";
@@ -191,6 +199,7 @@
 			children = (
 				E08D09C2274807FD005BBCF9 /* MyArcViewProjectUITests.swift */,
 				E08D09C4274807FD005BBCF9 /* Info.plist */,
+				E0115B52274AB4F5009BE00E /* ArcControllerUITest.swift */,
 			);
 			path = MyArcViewProjectUITests;
 			sourceTree = "<group>";
@@ -325,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0115B4D2749E39D009BE00E /* ArcLayoutViewModelProtocol.swift in Sources */,
 				E08D09A5274807FB005BBCF9 /* ArcController.swift in Sources */,
 				E0115B472748A73A009BE00E /* ArcControllerViewModel.swift in Sources */,
 				E08D09A1274807FB005BBCF9 /* AppDelegate.swift in Sources */,
@@ -336,6 +346,7 @@
 				E0115B3C2748603D009BE00E /* ArcCollectionViewLayout.swift in Sources */,
 				E0115B4127488401009BE00E /* Array+shift.swift in Sources */,
 				E08D09A3274807FB005BBCF9 /* SceneDelegate.swift in Sources */,
+				E0115B4B2749E2DA009BE00E /* ArcLayoutViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0115B53274AB4F5009BE00E /* ArcControllerUITest.swift in Sources */,
 				E08D09C3274807FD005BBCF9 /* MyArcViewProjectUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

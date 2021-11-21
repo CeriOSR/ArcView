@@ -8,33 +8,21 @@
 import UIKit
 
 class ArcCollectionViewLayout: UICollectionViewLayout {
-    // MARK: Public
-    var itemAndSpacingWidth: CGFloat {
-        return itemSize.width + itemXSpacing
-    }
     
-    // MARK: Private
-    private var itemCount: Int = 0
-    private var itemXSpacing: CGFloat = 7.0
-    private var itemSize: CGSize = CGSize(width: 80, height: 80)
-    // Radius of the circle that the cells will arc over - Lower for steeper arc.
-    private var arcRadius: CGFloat = 600
-    
-    // Make this large enough so a fast swipe will stop before bouncing. Needed for Looping.
-    private let insetWidth: CGFloat = 16000
+    var viewModel: ArcLayoutViewModelProtocol!
     
     // calculating the total content width of the collectionView
     private var contentWidth: CGFloat {
-        let totalItemAndSpacingWidth = (CGFloat(itemCount) * itemAndSpacingWidth)
+        let totalItemAndSpacingWidth = (CGFloat(viewModel.itemCount) * viewModel.itemAndSpacingWidth)
         return totalItemAndSpacingWidth
     }
     
     // preemptively widening the content width
     private var leadingOffsetX: CGFloat {
-        return insetWidth
+        return viewModel.insetWidth
     }
     private var trailingOffsetX: CGFloat {
-        return collectionViewContentSize.width - insetWidth
+        return collectionViewContentSize.width - viewModel.insetWidth
     }
     
     private var hasSetInitialContentOffsetOnce = false
@@ -42,6 +30,16 @@ class ArcCollectionViewLayout: UICollectionViewLayout {
     // For Arcing
     private var layoutAttributes: [UICollectionViewLayoutAttributes] = []
     private var adjustedLayoutAttributes: [UICollectionViewLayoutAttributes] = []
+    
+    init(viewModel: ArcLayoutViewModelProtocol = ArcLayoutViewModel()) {
+        self.viewModel = viewModel
+        super.init()
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        self.viewModel = ArcLayoutViewModel()
+    }
 }
 
 // MARK: - Overrides
@@ -49,7 +47,7 @@ extension ArcCollectionViewLayout {
     override var collectionViewContentSize: CGSize {
         guard let cv = collectionView else { return .zero }
         
-        let totalInsetWidth = insetWidth * 2.0
+        let totalInsetWidth = viewModel.insetWidth * 2.0
         let totalContentWidth = totalInsetWidth + contentWidth
         
         return CGSize(width: totalContentWidth, height: cv.frame.height)
@@ -59,31 +57,31 @@ extension ArcCollectionViewLayout {
         super.prepare()
         guard let cv = collectionView else { return }
         
-        itemCount = cv.numberOfItems(inSection: 0)
+        viewModel.itemCount = cv.numberOfItems(inSection: 0)
         
         // These are cached until reloadData or bounds size change.
         if layoutAttributes.count == 0 {
             var currentX = leadingOffsetX
             layoutAttributes = []
-            for item in 0..<itemCount {
+            for item in 0..<viewModel.itemCount {
                 let indexPath = IndexPath(item: item, section: 0)
                 let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
-                attributes.size = itemSize
+                attributes.size = viewModel.itemSize
                 
                 // Determine the vertical center
-                let xCenter = currentX + (itemSize.width / 2.0)
+                let xCenter = currentX + (viewModel.itemSize.width / 2.0)
                 let yCenter = cv.bounds.midY // * differs from original *
                 
                 attributes.center = CGPoint(x: xCenter, y: yCenter)
                 layoutAttributes.append(attributes)
                 
-                currentX += itemSize.width + itemXSpacing
+                currentX += viewModel.itemSize.width + viewModel.itemXSpacing
                 
             }
         }
         
         // if there are no items, we dont need to do anything else.
-        if itemCount == 0 { return }
+        if viewModel.itemCount == 0 { return }
         
         setInitialContentOffsetIfRequired(collectionView: cv)
         
@@ -91,11 +89,11 @@ extension ArcCollectionViewLayout {
         let normalizedContentOffsetX = cv.contentOffset.x - leadingOffsetX
         
         // find the nearest item index (this can be larger than the itemCount as we scroll to the right
-        let nearestContentIndex = Int(normalizedContentOffsetX / itemAndSpacingWidth)
-        let nearestItemIndex = Int(nearestContentIndex) % itemCount
+        let nearestContentIndex = Int(normalizedContentOffsetX / viewModel.itemAndSpacingWidth)
+        let nearestItemIndex = Int(nearestContentIndex) % viewModel.itemCount
         
         // how many full content widths are we offset by
-        let multiple = (nearestContentIndex - nearestItemIndex) / itemCount
+        let multiple = (nearestContentIndex - nearestItemIndex) / viewModel.itemCount
         
         adjustedLayoutAttributes = layoutAttributes
             .copy()
@@ -108,7 +106,7 @@ extension ArcCollectionViewLayout {
         currentX += (contentWidth * CGFloat(multiple))
         for attributes in adjustedLayoutAttributes {
             attributes.center = CGPoint(x: currentX, y: attributes.center.y)
-            currentX += itemAndSpacingWidth
+            currentX += viewModel.itemAndSpacingWidth
             
             adjustAttribute(attributes, collectionView: cv)
         }
@@ -172,7 +170,7 @@ extension ArcCollectionViewLayout {
 // MARK: Private Methods
 extension ArcCollectionViewLayout {
     private func initialContentOffset(collectionView cv: UICollectionView) -> CGPoint? {
-        guard let cv = collectionView, itemCount > 0 else { return nil }
+        guard let cv = collectionView, viewModel.itemCount > 0 else { return nil }
         let firstIndexPath = IndexPath(item: 0, section: 0)
         let attributes = layoutAttributes[firstIndexPath.item]
         // start at the end of the content if we are wrapping.
@@ -202,14 +200,14 @@ extension ArcCollectionViewLayout {
             size: cv.bounds.size
         )
         // if the cell is visible it needs to be3 translated to the arc.
-        let activeArcDistance = (visibleRect.width + itemSize.width) / 2
+        let activeArcDistance = (visibleRect.width + viewModel.itemSize.width) / 2
         
         let distanceFromCenter = abs(visibleRect.midX - attribute.center.x)
         var transform: CATransform3D = CATransform3DIdentity
         
         if distanceFromCenter < activeArcDistance {
             // divide the latter part by higher number to make the curve smaller. 5 is straight
-            let yTranslation = arcRadius - sqrt((arcRadius * arcRadius) - (distanceFromCenter * distanceFromCenter))
+            let yTranslation = viewModel.arcRadius - sqrt((viewModel.arcRadius * viewModel.arcRadius) - (distanceFromCenter * distanceFromCenter))
             transform = CATransform3DMakeTranslation(0, yTranslation, 0)
         }
         attribute.transform3D = transform

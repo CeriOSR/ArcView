@@ -11,7 +11,7 @@ typealias SingleResult<T> = ((T) -> Void)
 
 class ArcController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    private var viewmodel: ArcControllerViewModel!
+    private(set) var viewmodel: ArcControllerViewModelProtocol
 
     // Handler callers
     private var switchBackgroundColor: SingleResult<Int>?
@@ -21,8 +21,18 @@ class ArcController: UIViewController, UICollectionViewDelegate, UICollectionVie
     private var shrinkFarLeftCell: SingleResult<CGRect>?
     
     private var layout: ArcCollectionViewLayout!
-    @IBOutlet private weak var collectionView: UICollectionView!
-    @IBOutlet private weak var backgroundColorView: UIView!
+    @IBOutlet private(set) weak var collectionView: UICollectionView!
+    @IBOutlet private(set) weak var backgroundColorView: UIView!
+    
+    init(viewmodel: ArcControllerViewModelProtocol = ArcControllerViewModel()) {
+        self.viewmodel = viewmodel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        self.viewmodel = ArcControllerViewModel()
+        super.init(coder: coder)
+    }
     
 }
 
@@ -30,7 +40,6 @@ class ArcController: UIViewController, UICollectionViewDelegate, UICollectionVie
 extension ArcController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewmodel = ArcControllerViewModel()
         bind()
         setupViews()
     }
@@ -146,10 +155,10 @@ extension ArcController {
     ) {
 
         var offset = targetContentOffset.pointee
-        let index = (offset.x + scrollView.contentInset.left) / layout.itemAndSpacingWidth
+        let index = (offset.x + scrollView.contentInset.left) / layout.viewModel.itemAndSpacingWidth
         let roundedIndex = round(index)
         offset = CGPoint(
-            x: roundedIndex * layout.itemAndSpacingWidth,
+            x: roundedIndex * layout.viewModel.itemAndSpacingWidth,
             y: scrollView.contentInset.top
         )
         targetContentOffset.pointee = offset

@@ -41,19 +41,21 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cf4-mv-ggD">
-                                                            <rect key="frame" x="29" y="29" width="70" height="70"/>
+                                                            <rect key="frame" x="31" y="31" width="66" height="66"/>
                                                             <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                                            <accessibility key="accessibilityConfiguration" identifier="borderView"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="70" id="9io-qF-6kE"/>
-                                                                <constraint firstAttribute="width" constant="70" id="byW-4O-8DL"/>
+                                                                <constraint firstAttribute="height" constant="66" id="9io-qF-6kE"/>
+                                                                <constraint firstAttribute="width" constant="66" id="byW-4O-8DL"/>
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eaE-9p-2M7">
-                                                            <rect key="frame" x="31" y="31" width="66" height="66"/>
+                                                            <rect key="frame" x="33" y="33" width="62" height="62"/>
                                                             <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                            <accessibility key="accessibilityConfiguration" identifier="colorView"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="66" id="Cy8-e7-cmH"/>
-                                                                <constraint firstAttribute="height" constant="66" id="Via-M7-0YJ"/>
+                                                                <constraint firstAttribute="width" constant="62" id="Cy8-e7-cmH"/>
+                                                                <constraint firstAttribute="height" constant="62" id="Via-M7-0YJ"/>
                                                             </constraints>
                                                         </view>
                                                     </subviews>
@@ -74,6 +76,7 @@
                                     </collectionView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="backgroundColorView"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="BKC-sQ-HQd" secondAttribute="trailing" id="3Ib-i0-aUF"/>
                                     <constraint firstItem="BKC-sQ-HQd" firstAttribute="leading" secondItem="POa-tX-haF" secondAttribute="leading" id="48J-Rd-oPX"/>
