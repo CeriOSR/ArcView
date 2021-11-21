@@ -41,19 +41,19 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cf4-mv-ggD">
-                                                            <rect key="frame" x="34" y="34" width="60" height="60"/>
+                                                            <rect key="frame" x="29" y="29" width="70" height="70"/>
                                                             <color key="backgroundColor" systemColor="systemPinkColor"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="60" id="9io-qF-6kE"/>
-                                                                <constraint firstAttribute="width" constant="60" id="byW-4O-8DL"/>
+                                                                <constraint firstAttribute="height" constant="70" id="9io-qF-6kE"/>
+                                                                <constraint firstAttribute="width" constant="70" id="byW-4O-8DL"/>
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eaE-9p-2M7">
-                                                            <rect key="frame" x="36" y="36" width="56" height="56"/>
+                                                            <rect key="frame" x="31" y="31" width="66" height="66"/>
                                                             <color key="backgroundColor" systemColor="systemYellowColor"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="56" id="Cy8-e7-cmH"/>
-                                                                <constraint firstAttribute="height" constant="56" id="Via-M7-0YJ"/>
+                                                                <constraint firstAttribute="width" constant="66" id="Cy8-e7-cmH"/>
+                                                                <constraint firstAttribute="height" constant="66" id="Via-M7-0YJ"/>
                                                             </constraints>
                                                         </view>
                                                     </subviews>

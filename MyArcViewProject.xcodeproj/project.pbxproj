@@ -97,6 +97,7 @@
 		E0115B3727485F92009BE00E /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				E08D09A6274807FB005BBCF9 /* Main.storyboard */,
 				E0115B3A27485FFB009BE00E /* CollectionViewLayout */,
 				E0115B3927485FB5009BE00E /* ArcCell */,
 				E0115B3827485FA3009BE00E /* ViewController */,
@@ -168,7 +169,6 @@
 				E0115B3727485F92009BE00E /* UI */,
 				E08D09A0274807FB005BBCF9 /* AppDelegate.swift */,
 				E08D09A2274807FB005BBCF9 /* SceneDelegate.swift */,
-				E08D09A6274807FB005BBCF9 /* Main.storyboard */,
 				E08D09A9274807FD005BBCF9 /* Assets.xcassets */,
 				E08D09AB274807FD005BBCF9 /* LaunchScreen.storyboard */,
 				E08D09AE274807FD005BBCF9 /* Info.plist */,
