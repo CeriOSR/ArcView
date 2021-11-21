@@ -11,8 +11,8 @@ import UIKit
 class ArcCellViewModel: ArcCellViewModelProtocol {
     // Constants
     let kBorderViewScale: CGFloat = 0.3
-    let kColorViewScaleSmall: CGFloat = 0.6
-    let kColorViewScaleMedium: CGFloat = 0.8
+    let kColorViewScaleSmall: CGFloat = 0.7
+    let kColorViewScaleMedium: CGFloat = 0.9
     
     // variables
     var color: UIColor
